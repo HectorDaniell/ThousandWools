@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,700;1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
 *{
@@ -29,6 +30,7 @@
     padding: 14px 20px;
     text-decoration: none;
     float:left;
+
 }
 li p:hover {
     background-color: #111;
@@ -37,6 +39,10 @@ li p:hover {
 .n1 p:active{
     background-color:antiquewhite;
     color: #111;
+}
+.header{
+    position: sticky;
+    top: 0px;
 }
 
 
@@ -60,7 +66,7 @@ li p:hover {
 }
 	
 .flexsearch--input-wrapper {
-	padding: 0 66px 0 0; /* Right padding for submit button width */
+	padding: 0 70px 0 0; /* Right padding for submit button width */
 	overflow: hidden;
 }
 
@@ -144,6 +150,8 @@ input:-moz-placeholder {
     position:relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin-top: 2px;
+   /*  display: flex; */
+
     
 }
 
@@ -161,9 +169,11 @@ input:-moz-placeholder {
     overflow:hidden;
     width: 100%;
     height: calc( 300px + 8em);
+
+    
 }
 .slide-open:checked + .slide-item {
-    position: static;
+    position: STATIC;
     opacity: 100;
 }
 .slide-item {
@@ -171,11 +181,13 @@ input:-moz-placeholder {
     opacity: 0;
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
+    
 }
 .slide-item img {
     display: block;
     height: auto;
     max-width: 100%;
+
 }
 .slide-control {
     background: rgba(0, 0, 0, 0.28);
@@ -195,6 +207,7 @@ input:-moz-placeholder {
     text-align: center;
     width: 40px;
     z-index: 10;
+    
 }
 .slide-control.prev {
     left: 2%;
@@ -244,5 +257,32 @@ input:-moz-placeholder {
     li:nth-child(3) .slide-circulo,
 #slide-4:checked ~ .control-4 ~ .slide-indicador 
     li:nth-child(4) .slide-circulo {
-    color: #428bca;
+    color: #ebf6ff;
+}
+
+
+.sing-butt{
+    border: none;
+    background-color: transparent;
+    border-radius: 45px;
+    font-family:'Montserrat', sans-serif ;
+    font-size: 14pt;
+    box-shadow:0px 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px 15px 15px 15px;
+    transition: all 0.3s ease 0s;/*Esto va ...*/
+
+
+    margin: 20px 10px 10px 10px;
+    align-self: flex-end;
+    
+
+    
+
+
+}
+.sing-butt:hover{
+    cursor: pointer;
+    background-color:whitesmoke;
+    transform: translateY(-7px);/*va con esto*/
+
 }
