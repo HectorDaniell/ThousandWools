@@ -175,10 +175,16 @@ body {
 
   /* style */
 
-.home{
-  padding-left: 5px;
-  padding-right: 80px;
 
+  .ico{
+    align-self: center;
+  }
+.home{
+/*   padding-left: 5px;
+  padding-right: 80px;
+  padding-top: 5px;
+  padding-bottom: 5px; */
+  align-self: center;
 }
 
 .home:hover{
@@ -187,7 +193,6 @@ body {
 
 .py-2.d-none.d-md-inline-block.text-black.text-decoration-none{
   padding: 80px 80px 80px 80px;
-  
 }
 
   .site-header.sticky-top.py-1{
@@ -198,12 +203,13 @@ body {
     font-size: 14pt;
     box-shadow:0px 8px 15px rgba(0, 0, 0, 0.7);
 
+
   }
   .container.d-flex.flex-column.flex-md-row{
-    align-items: center;
+    align-items:stretch;
     text-align: center;
     justify-content:space-around;
-    
+    flex-wrap: wrap;
   }
 
 
