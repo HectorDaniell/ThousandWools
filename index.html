@@ -13,28 +13,69 @@
 
 </head>
 <body>
-      <header class="site-header sticky-top py-1">
-        <nav class="container d-flex flex-column flex-md-row">
-          <img class="ico" src="../Daniel-s-FirstProject/img/Captura de pantalla 2023-01-26 a la(s) 8.58.38 p.m..png" alt="ico" width="30px" height="30px">
+        <nav class="navbar">
+          <!-- Boton responsivo oculto navbar -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Elementos de navbar -->
+          <a href="#"><img class="ico" src="../Daniel-s-FirstProject/img/Captura de pantalla 2023-01-26 a la(s) 8.58.38 p.m..png" alt="ico" width="25px" height="25px"></a> 
           <a class="home" href="#" style="font-weight: bolder; color: burlywood; text-decoration: none; justify-content: space-between;">Thousand Wools</a>
-          <a class="py-2 d-none d-md-inline-block text-black text-decoration-none" href="#">Galeria</a>
-          <a class="py-2 d-none d-md-inline-block text-black text-decoration-none" href="#">Patrones</a>
-          <a class="py-2 d-none d-md-inline-block text-black text-decoration-none" href="#">Cursos</a>
-          <a class="py-2 d-none d-md-inline-block text-black text-decoration-none" href="#">Clientes</a>
-        </nav>
-      </header>
-      
-      
-      <main>
+          <a class="nav-it" href="#">Galeria</a>
+          <a class="nav-it" href="#">Patrones</a>
+          <a class="nav-it" href="#">Nosotros</a>
+          <a class="nav-it" href="#">Nosotros</a>
+          <!-- Panel lateral responsivo -->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 250px;" >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-weight: bolder; color: burlywood;" color: >Thousand Wools</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cursos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Galeria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Patrones</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Nosotros
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Contacto</a></li>
+                    <li><a class="dropdown-item" href="#">Historia</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Pedidos Personalizados</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
       
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
           </div>
+
+<!-- SILIDE 1 -->
+
           <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="7000">
+            <div class="carousel-item active" data-bs-interval="6000">
               <img src="https://images.pexels.com/photos/3942923/pexels-photo-3942923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="d-block w-100" alt="img1">
               <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
               <div class="container">
@@ -45,7 +86,10 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="7000">
+
+<!-- SILIDE 2 -->
+
+            <div class="carousel-item" data-bs-interval="6000">
               <img src="https://images.pexels.com/photos/4792071/pexels-photo-4792071.jpeg?auto=compress&cs=tinysrgb&w=800" class="d-block w-100" alt="img2">
               <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
               <div class="container">
@@ -56,18 +100,23 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="7000">
-            <img src="https://images.pexels.com/photos/236028/pexels-photo-236028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="d-block w-100" alt="img3">
+
+<!-- SILIDE 3 -->
+
+            <div class="carousel-item" data-bs-interval="6000">
+            <img src="https://images.pexels.com/photos/10201057/pexels-photo-10201057.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="d-block w-100" alt="img3">
               <!-- <svg class="bd-placeholder-img"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
               <div class="container">
                 <div class="carousel-caption text-end">
                   <h1>Tenemos una gran variedad de modelos</h1>
-                  <p class="textCarousel">Echos 100% a mano</p>
+                  <p class="textCarousel">Echs 100% a mano</p>
                   <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
                 </div>
               </div>
             </div>
+
           </div>
+
           <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -77,18 +126,20 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      
-      
+
+
+
+        <main>
         <!-- Marketing messaging and featurettes
         ================================================== -->
         <!-- Wrap the rest of the page in another container to center all the content. -->
-      
         <div class="container marketing">
-      
           <!-- Three columns of text below the carousel -->
           <div class="row">
             <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="#777" />
+              </svg>
               <h2 style="font-weight: bold;">Patrones</h2>
               <p>¿Buscas un patrones para tu modelo? </p>
               <p>Aqui encontraras una gran variedad de patrones gratis y de paga para que lleves tu talento a la cima</p>
@@ -119,25 +170,23 @@
               <p class="lead">Colecccion de munecos de crochet echos a mano de la famosa saga de Star Wars</p>
             </div>
             <div class="col-md-5">
-              
               <img src="../Daniel-s-FirstProject/img/775D7D02-E3A9-4E83-85FA-8262428D89AD_1_105_c.jpeg" width="500" height="500" alt="model1">
 <!--              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#eee"/>
                   <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
               </svg> -->
-              
             </div>
           </div>
       
           <hr class="featurette-divider">
       
           <div class="row featurette">
-            <div class="col-md-7 order-md-2">
+            <div class="col-md-7">
               <h2 class="featurette-heading fw-normal lh-1">Pedidos Personalizados - <span class="text-muted">Murcielago negro</span></h2>
               <p class="lead">Puedes pedir un muneco personalizado a tu gusto, contactanos para explicar tu pedido o enviar una referencia y lo hacemos en base a tus sugerencias</p>
             </div>
-            <div class="col-md-5 order-md-1">
+            <div class="col-md-5 ">
               <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
               <img src="../Daniel-s-FirstProject/img/F471A896-A996-4B68-9CE3-BBC9715F6366.jpeg" width="500" height="500" alt="model1">
             </div>
