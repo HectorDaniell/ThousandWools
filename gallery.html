@@ -4,13 +4,214 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> <!-- IMPORTANT FOR DESIGN BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="../Daniel-s-FirstProject/css/gallery.css">
+    <link rel="stylesheet" href="../Daniel-s-FirstProject/css/home_styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="../Daniel-s-FirstProject/img/icoTW .png">
+
+    <title>Galeria</title> 
 </head>
 <body>
-    <a href="https://ig.me/m/thousandwools" class="btn btn-primary" target="_blank"  >Mensaje</a>
-    <p>Enviar mensaje</p>
+
+    <nav class="navbar">
+        <!-- Boton responsivo oculto navbar -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Elementos de navbar -->
+        <a href="../Daniel-s-FirstProject/index.html"><img class="ico" src="../Daniel-s-FirstProject/img/icoTW .png" alt="ico" width="25px" height="25px"></a> 
+        <a class="home" href="../Daniel-s-FirstProject/index.html" style="font-weight: bolder; color: burlywood; text-decoration: none; justify-content: space-between;">Thousand Wools</a>
+        <a class="nav-it" href="./gallery.html" style="background-color: burlywood; color: white;" >Galeria</a>
+        <a class="nav-it">Patrones</a>
+        <a class="nav-it">Nosotros</a>
+        <a class="nav-it">Nosotros</a>
+        <!-- Panel lateral responsivo -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 250px;" >
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-weight: bolder; color: burlywood;" color: >Thousand Wools</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Patrones</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item">Contacto</a></li>
+                    <li><a class="dropdown-item">Historia</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item">Pedidos Personalizados</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
 
 
-    
+
+
+    <div class="ful-gallery" id="ful-img-box">
+        <img src=""  id="ful-img" alt="">
+        <input type="button" class=" btn-close" id="btncls"></input>
+    </div>
+
+    <div class="header-title">
+        <p class="tituloGaleria">GALERIA DE FOTOS</p>
+        <p class="textHead">Estas en la seccion de galeria, aqui podras encontrar todos nuestros disenos, <br> ver sus patrones y ponerte en contacto con nosotros para hacer un pedido</p>
+    </div>
+
+    <hr class="featurette-divider">
+
+
+
+
+    <section class="container">
+
+        <div class="card">
+            <img src="../Daniel-s-FirstProject/img/fotos_originales/murcielago.png"  alt="img1">
+
+            <div class="card-body">
+                <h2>Murcielago</h2>
+                <p>Lorem ipsum dolvbvbvor sit amet consectetur adipisicing </p>
+            </div>
+
+            <div class="card-footer">
+                <div class="btn-group">
+                    <a class="btn btn-outline-secondary" onclick="openImg('../Daniel-s-FirstProject/img/fotos_originales/murcielago.png')" id="btn-view-full">View</a>
+                    <a href="https://ig.me/m/thousandwools" class="btn btn-outline-primary" target="_blank">Mensaje</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <img src="../Daniel-s-FirstProject/img/fotos_originales/gato frente.png"  alt="img1">
+            <div class="card-body">
+                <h2>Gatito</h2>
+                <p>Lorem ipsum dolvbvbvor sit amet consectetur adipisicing </p>
+            </div>
+            <div class="card-footer">
+                <div class="btn-group">
+                    <a class="btn btn-outline-secondary" onclick="openImg('../Daniel-s-FirstProject/img/fotos_originales/gato frente.png')" id="btn-view-full">View</a>
+                    <a href="https://ig.me/m/thousandwools" class="btn btn-outline-primary" target="_blank">Mensaje</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Daniel-s-FirstProject/img/fotos_originales/yoga vestido.png" alt="img1">
+            <div class="card-body"> 
+                <h2>Baby Yoda</h2>
+                <p>Lorem ipsum dolvbvbvor sit amet consectetur adipisicing </p>
+            </div>
+            <div class="card-footer">
+                <div class="btn-group">
+                    <a class="btn btn-outline-secondary" onclick="openImg('../Daniel-s-FirstProject/img/fotos_originales/yoga vestido.png')" id="btn-view-full">View</a>
+                    <a href="https://ig.me/m/thousandwools" class="btn btn-outline-primary" target="_blank">Mensaje</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Daniel-s-FirstProject/img/fotos_originales/Tony Tony Chopper frente.png" alt="img1">
+            <div class="card-body">
+                <h2>Tony Tony Chopper</h2>
+                <p>Lorem ipsum dolvbvbvor sit amet consectetur adipisicing </p>
+            </div>
+            <div class="card-footer">
+                <div class="btn-group">
+                    <a class="btn btn-outline-secondary" onclick="openImg('../Daniel-s-FirstProject/img/fotos_originales/Tony Tony Chopper frente.png')" id="btn-view-full">View</a>
+                    <a href="https://ig.me/m/thousandwools" class="btn btn-outline-primary" target="_blank">Mensaje</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Daniel-s-FirstProject/img/fotos_originales/big abejo.png" alt="img1">
+            <div class="card-body">
+                <h2>Llavero de abejita</h2>
+                <p>Lorem ipsum dolvbvbvor sit amet consectetur adipisicing </p>
+            </div>
+            <div class="card-footer">
+                <div class="btn-group">
+                    <a class="btn btn-outline-secondary" onclick="openImg('../Daniel-s-FirstProject/img/fotos_originales/big abejo.png')" id="btn-view-full">View</a>
+                    <a href="https://ig.me/m/thousandwools" class="btn btn-outline-primary" target="_blank">Mensaje</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Daniel-s-FirstProject/img/fotos_originales/jagi.png" alt="img1">
+            <div class="card-body">
+                <h2>Harry Potter</h2>
+                <p>Lorem ipsum dolvbvbvor sit amet consectetur adipisicing </p>
+            </div>
+            <div class="card-footer">
+                <div class="btn-group">
+                    <a class="btn btn-outline-secondary"  onclick="openImg('../Daniel-s-FirstProject/img/fotos_originales/jagi.png')" id="btn-view-full">View</a>
+                    <a href="https://ig.me/m/thousandwools" class="btn btn-outline-primary" target="_blank">Mensaje</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../Daniel-s-FirstProject/img/fotos_originales/wootteo.png" alt="img1">
+            <div class="card-body">
+                <h2>Wootteo</h2>
+                <p>Lorem ipsum dolvbvbvor sit amet consectetur adipisicing </p>
+            </div>
+            <div class="card-footer">
+                <div class="btn-group">
+                    <a class="btn btn-outline-secondary"  onclick="openImg('../Daniel-s-FirstProject/img/fotos_originales/wootteo.png')" id="btn-view-full">View</a>
+                    <a href="https://ig.me/m/thousandwools" class="btn btn-outline-primary" target="_blank">Mensaje</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../Daniel-s-FirstProject/img/fotos_originales/baieno.png" alt="img1">
+            <div class="card-body">
+                <h2>Llavero de ballena</h2>
+                <p>Lorem ipsum dolvbvbvor sit amet consectetur adipisicing </p>
+            </div>
+            <div class="card-footer">
+                <div class="btn-group">
+                    <a class="btn btn-outline-secondary"  onclick="openImg('../Daniel-s-FirstProject/img/fotos_originales/baieno.png')" id="btn-view-full">View</a>
+                    <a href="https://ig.me/m/thousandwools" class="btn btn-outline-primary" target="_blank">Mensaje</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="../Daniel-s-FirstProject/img/fotos_originales/chinsiya.png" alt="img1">
+            <div class="card-body">
+                <h2>Chinsiya</h2>
+                <p>Lorem ipsum dolvbvbvor sit amet consectetur adipisicing </p>
+            </div>
+            <div class="card-footer">
+                <div class="btn-group">
+                    <a class="btn btn-outline-secondary"  onclick="openImg('./Daniel-s-FirstProject/img/fotos_originales/chinsiya.png')" id="btn-view-full">View</a>
+                    <a href="https://ig.me/m/thousandwools" class="btn btn-outline-primary" target="_blank">Mensaje</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="../Daniel-s-FirstProject/js/imgFull.js"></script>
 </body>
 </html>
