@@ -6,27 +6,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
-.header-title{
-
-}
-.tituloGaleria{
-    font-size: 55px;
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 0;
-    font-weight: bold;
-    color: rgb(218, 183, 138);
-
-
-}
-.textHead{
-    text-align: center;
-    font-size: 25px;
-}
-#containerTitulo{
-    border: none;
-}
-
 .card{
     background-color:white;
     box-shadow:0px 8px 15px rgba(0, 0, 0, 0.08);
@@ -43,7 +22,7 @@ body {
     border: solid 1px rgb(201, 201, 201);
     padding: 50px;
     border-radius: 1%;
-
+    margin-bottom: 150px;
 }
 
 .ful-gallery{
@@ -74,4 +53,60 @@ body {
     width: 40%;
     max-width: 700px;
 
+}
+
+.container.px-4.px-lg-5{
+    border: none;
+}
+
+
+
+@media (max-width:300px){
+    .avisosCopy{
+        font-size: 14px; 
+    }
+    .img_gall{
+        width: 150px;
+        height: 150px;
+    }
+    .lead{
+        font-size: 18px;
+    }
+
+    .py-5.text-center.container-fluid{
+        display: block;
+        
+    }
+    .container{
+        border: none;
+        display: inline;
+        
+    }
+
+}
+
+
+
+@media (max-width:890px )and (max-height:1400px){
+
+    .avisosCopy{
+        font-size: 14px; 
+    }
+    .img_gall{
+        width: 150px;
+        height: 150px;
+    }
+    .lead{
+        font-size: 18px;
+    }
+
+    .py-5.text-center.container-fluid{
+        display: block;
+        
+    }
+    .container{
+        border: none;
+
+        
+    }
 }

@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="lana, crochet, texitl, arte, peru, tejer, mil, thousand, wools">
+    
     <title>Thousand Wools</title>
     <link rel="icon" href="../Daniel-s-FirstProject/img/icoTW .png">
+    <link rel="stylesheet" 		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!-- iconos contacto -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> <!-- IMPORTANT FOR DESIGN BOOTSTRAP CDN -->
     <link rel="stylesheet" href="../Daniel-s-FirstProject/css/home_styles.css">
+    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script><!-- IMPORTANT FOR CAROUSEL -->
     
 </head>
 <body>
-        <nav class="navbar">
+
+        <nav class="navbar" id="mainNav">
           <!-- Boton responsivo oculto navbar -->
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" >
             <span class="navbar-toggler-icon"></span>
           </button>
           <!-- Elementos de navbar -->
-          <a href="#"><img class="ico" src="../Daniel-s-FirstProject/img/icoTW .png" alt="ico" width="25px" height="25px"></a> 
-          <a class="home" href="#" style="font-weight: bolder; color: burlywood; text-decoration: none; justify-content: space-between;">Thousand Wools</a>
+          <a href=""><img class="ico" src="../Daniel-s-FirstProject/img/icoTW .png" alt="ico" width="25px" height="25px"></a> 
+          <a class="home" href="" style="font-weight: bolder; color: #deb887; text-decoration: none; justify-content: space-between;">Thousand Wools</a>
           <a class="nav-it" href="./gallery.html">Galeria</a>
-          <a class="nav-it" href="#">Patrones</a>
-          <a class="nav-it" href="#">Nosotros</a>
+          <a class="nav-it" href="#servicios">Servicios</a>
+          <a class="nav-it" href="#contacto">Contacto</a>
           <a class="nav-it" href="#">Nosotros</a>
           <!-- Panel lateral responsivo -->
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 250px;" >
@@ -33,46 +39,34 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Cursos</a>
+                  <a class="nav-link " aria-current="page" href="/Daniel-s-FirstProject/index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./gallery.html">Galeria</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Patrones</a>
+                  <a class="nav-link" href="#servicios">Servicios</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Nosotros
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Contacto</a></li>
-                    <li><a class="dropdown-item" href="#">Historia</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Pedidos Personalizados</a></li>
-                  </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portafolio">Portafolio</a>
                 </li>
+                
               </ul>
             </div>
           </div>
         </div>
       </nav>
       
+<!-- Seccion carrusel -->
+<section id="carrusel">
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-
           </div>
 
-<!-- SILIDE 1 -->
-
+          <!-- SILIDE 1 -->
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="6000">
               <img src="https://images.pexels.com/photos/3942923/pexels-photo-3942923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="d-block w-100" alt="img1">
@@ -85,9 +79,7 @@
                 </div>
               </div>
             </div>
-
-<!-- SILIDE 2 -->
-
+            <!-- SILIDE 2 -->
             <div class="carousel-item" data-bs-interval="6000">
               <img src="https://images.pexels.com/photos/4792071/pexels-photo-4792071.jpeg?auto=compress&cs=tinysrgb&w=800" class="d-block w-100" alt="img2">
               <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
@@ -99,9 +91,7 @@
                 </div>
               </div>
             </div>
-
-<!-- SILIDE 3 -->
-
+            <!-- SILIDE 3 -->
             <div class="carousel-item" data-bs-interval="6000">
             <img src="https://images.pexels.com/photos/10201057/pexels-photo-10201057.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="d-block w-100" alt="img3">
               <!-- <svg class="bd-placeholder-img"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
@@ -113,7 +103,6 @@
                 </div>
               </div>
             </div>
-
           </div>
 
           <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -126,98 +115,147 @@
           </button>
         </div>
 
-
-
-        <main>
-        <!-- Marketing messaging and featurettes
-        ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
+</section>
+    
+<!--Seccion Servicios -->
+<section id="servicios">
+        <section class="page-section" id="services">
+          <div class="container px-4 px-lg-5">
+              <h2 class="text-center mt-0">A tu servicio</h2>
+              <hr class="divider"/>
+          </div>
+        </section>
+        
         <div class="container marketing">
           <!-- Three columns of text below the carousel -->
           <div class="row">
             <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <rect width="100%" height="100%" fill="#777" />
-              </svg>
+              <img src="/Daniel-s-FirstProject/img/ico_svg/weave-svgrepo-com.svg" width="140" height="140" alt="svg">
               <h2 style="font-weight: bold;">Patrones</h2>
-              <p>¿Buscas un patrones para tu modelo? </p>
               <p>Aqui encontraras una gran variedad de patrones gratis y de paga para que lleves tu talento a la cima</p>
               <p><a class="btn btn-secondary" href="#">Buscar &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-              <h2 style="font-weight: bold;">Haz tu pedido!</h2>
-              <p>Personalizamos tu modelo a gusto tuyo</p>
+              <img src="/Daniel-s-FirstProject/img/ico_svg/crochet-fashion-svgrepo-com.svg" width="140" height="140" alt="svg">
+              <h2 style="font-weight: bold;">Tejido a mano</h2>
+              <p>Tenemos una variedad de muñecos, llaveros, amirigumis, y prendas tejidos a corchet</p>
               <p><a class="btn btn-secondary" href="#">Quiero uno!! &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-              <h2 style="font-weight: bold;">Heading</h2>
-              <p>And lastly this, the third column of representative placeholder content.</p>
+              <img src="/Daniel-s-FirstProject/img/ico_svg/delivery-svgrepo-com.svg" width="140" height="140" alt="svg">
+              <h2 style="font-weight: bold;">Pedidos personalizados...</h2>
+              <p>... y envios a todo el Peru</p>
               <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
           </div><!-- /.row -->
+          <hr class="featurette-divider"/>
+</section>
       
+
+<!-- Seccion Portafolio -->
       
-          <!-- START THE FEATURETTES -->
-      
-          <hr class="featurette-divider">
-      
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading fw-normal lh-1">Coleccion Star Wars - <span class="text-muted">Maestro Yoda</span></h2>
-              <p class="lead">Colecccion de munecos de crochet echos a mano de la famosa saga de Star Wars</p>
-            </div>
-            <div class="col-md-5">
-              <img src="../Daniel-s-FirstProject/img/775D7D02-E3A9-4E83-85FA-8262428D89AD_1_105_c.jpeg" width="500" height="500" alt="model1">
-<!--              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#eee"/>
-                  <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-              </svg> -->
-            </div>
-          </div>
-      
-          <hr class="featurette-divider">
-      
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading fw-normal lh-1">Pedidos Personalizados - <span class="text-muted">Murcielago negro</span></h2>
-              <p class="lead">Puedes pedir un muneco personalizado a tu gusto, contactanos para explicar tu pedido o enviar una referencia y lo hacemos en base a tus sugerencias</p>
-            </div>
-            <div class="col-md-5 ">
-              <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
-              <img src="../Daniel-s-FirstProject/img/F471A896-A996-4B68-9CE3-BBC9715F6366.jpeg" width="500" height="500" alt="model1">
+<section id="portafolio">
+  <section class="page-section" id="services">
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0">Portafolio</h2>
+        <hr class="divider"/>
+        <p>Aqui puedes ver nuestros ultimos disenos, puedes ver todos enb nuestra galeria </p>
+        <p><a class="btn btn-secondary" href="/Daniel-s-FirstProject/gallery.html">Ver mas &raquo;</a></p>
+    </div>
+  </section>
+<br>
+  <section class="page-section bg-white" id="portfolio">
+    <div class="container">
+        <div class="text-center mt-0">
+            <h2>Algunos de nuestros trabajos...</h2>
+            <p>Todos echos 100% a mano</p>
+        </div>
+        <div class="row">
+          <!-- Portfolio item 1-->
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="portfolio-item">
+                <img class="img-fluid" src="./img/fotos_originales/yoga vestido.png" alt="..." />
+                <div class="portfolio-caption-heading fw-bolder">Coleccion Star Wars - Maestro Yoda</div>
+                <div class="portfolio-caption-subheading text-muted">Muneco de coleccion/ decoracion de Star Wars</div>
             </div>
           </div>
-      
-          <hr class="featurette-divider">
-      
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading fw-normal lh-1"> Tenemos tambien llaveros personalizados <span class="text-muted"> para recuerdos de ceremonias</span></h2>
-              <p class="lead"> Si deseas se le pudede agregar el kit de llavero o recordatorio a tu pedido, esto incluye una argolla con cadena de llavero.</p>
+
+            <!-- Portfolio item 2-->
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                  <img class="img-fluid" src="./img/fotos_originales/murcielago.png" alt="..." />
+                  <div class="portfolio-caption-heading fw-bolder">Llavero de Murcielago</div>
+                  <div class="portfolio-caption-subheading text-muted">Ideal para poner en tu mochila, llaves, etc</div>
+                </div>
             </div>
-            <div class="col-md-5">
-              <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
-              <img src="../Daniel-s-FirstProject/img/68CB9BC9-E487-4C83-9FB2-85DE3E48E6B2_1_102_o.jpeg" width="500" height="500" alt="model1">
+
+            <!-- Portfolio item 2-->
+            <div class="col-lg-4 col-sm-6 mb-4">
+                  <div class="portfolio-item">
+                    <img class="img-fluid" src="./img/fotos_originales/Tony Tony Chopper frente.png" alt="..." />
+                    <div class="portfolio-caption-heading fw-bolder">Tony Tony Chopper</div>
+                    <div class="portfolio-caption-subheading text-muted">Un modelo de la famosa serie One Piece</div>
+                  </div>
             </div>
+        </div>
+
+            <hr class="featurette-divider">
+        
+
+        
+    </div>
+  </section>
+
+
+      <section id="contacto">
+
+        <section class="page-section" id="services">
+          <div class="container px-4 px-lg-5">
+              <h2 class="text-center mt-0"> Contactanos</h2>
+              <hr class="divider"/>
           </div>
+        </section>
+        <ul>
+          <li style="--i:#56CCF2;--j:#2F80ED;">
+            <a class="icon"><i class="fa fa-facebook"></i></a>
+            <a class="titulo">facebook</a>
+          </li>
+<!--           <li style="--i:#56CCF2;--j:#2F80ED;">
+            <span class="icon"><i class="fa fa-twitter"></i></span>
+            <span class="titulo">twitter</span>
+          </li> -->
+          <li style="--i:#86be6b;--j:#1baf16;">
+            <a class="icon"><i class="fa fa-whatsapp"></i></a>
+            <a class="titulo">whatsapp</a>
+          </li>
+<!--           <li style="--i:#80FF72;--j:#5ec3d4;">
+            <span class="icon"><i class="fa fa-linkedin"></i></span>
+            <span class="titulo">linkedin</span>
+          </li> -->
+          <li style="--i:#FFA9C6;--j:#F434E2;">
+            <a class="icon"></a><i class="fa fa-instagram"></i></https:>
+            <a class="titulo"  href="https://www.instagram.com/thousandwools/">instagram </a>
+            
+          </li>
+        </ul>
+      </section>
       
-          <hr class="featurette-divider">
       
-          <!-- /END THE FEATURETTES -->
       
-        </div><!-- /.container -->
       
+      </section>
       
         <!-- FOOTER -->
-        <footer class="container">
-          <p class="float-end"><a href="#">Back to top</a></p>
-          <p>&copy; 2023 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <footer class="bg-light py-5">
+          <div class="imgFoot">
+            <img class="logoTw" src="./img/THOUSAND WOOLS logo horizontal negativo.png" width="261px" height="86px" alt="">
+          </div>
+          
+          <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2023 - Thousand Wools</div></div>
+          <p class="avisosCopy" ><a href="https://copyrightservice.net/es/copyright_notice" title="Avisos de derechos de autor">Avisos de derechos de autor</a> - Internacional De Derechos De Autor (ICS)</p>
         </footer>
-      </main>
-      
-      
-          <!-- <script src="../Daniel-s-FirstProject/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+
+
+
+
       </html>
