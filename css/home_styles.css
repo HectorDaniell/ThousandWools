@@ -18,7 +18,7 @@ body {
   .btn.btn-lg.btn-primary{
     transition: all 0.3s ease 0s;/*Esto va ...*/
     box-shadow:0px 8px 15px rgba(0, 0, 0, 0.7);
-    background-color: rgb(195, 165, 126);
+    background-color: #c3a57e;
     border: none;
   }
 
