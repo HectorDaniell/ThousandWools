@@ -59,7 +59,10 @@ body {
     border: none;
 }
 
-
+.py-5.text-center.container{
+    border: none;
+    margin: auto;
+}
 
 @media (max-width:300px){
     .avisosCopy{

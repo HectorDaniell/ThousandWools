@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> <!-- IMPORTANT FOR DESIGN BOOTSTRAP CDN -->
+    <script src="/js/scrollRevealLib.js"></script>
     <link rel="stylesheet" href="/css/gallery.css">
     <link rel="stylesheet" href="/css/home_styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
@@ -22,10 +23,11 @@
         <!-- Elementos de navbar -->
         <a href=""><img class="ico" src="/img/icoTW .png" alt="ico" width="25px" height="25px"></a> 
         <a class="home" href="index.html" style="font-weight: bolder; color: #deb887; text-decoration: none; justify-content: space-between;">Thousand Wools</a>
-        <a class="nav-it" href="gallery.html">Galeria</a>
-        <a class="nav-it" href="./index.html#servicios">Servicios</a>
-        <a class="nav-it" href="./index.html#contacto">Contacto</a>
-        <a class="nav-it" href="#">Nosotros</a>
+        <a class="nav-it opc" href="/index.html">Inicio</a>
+        <a class="nav-it opc" href="gallery.html">Galeria</a>
+        <a class="nav-it opc" href="./index.html#servicios">Servicios</a>
+        <a class="nav-it opc" href="./index.html#contacto">Contacto</a>
+        <a class="nav-it opc" href="#">Nosotros</a>
         <!-- Panel lateral responsivo -->
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 250px;" >
             <div class="offcanvas-header">
@@ -60,7 +62,7 @@
 
 
 
-    <section class="py-5 text-center container-fluid">
+    <section class="py-5 text-center container">
     
             <div class="head_gall">
                 <h1 class="fw-bolder">GALERIA DE FOTOS</h1>
@@ -197,7 +199,7 @@
             </div>
             <div class="card-footer">
                 <div class="btn-group">
-                    <a class="btn btn-outline-secondary"  onclick="openImg('./Daniel-s-FirstProject/img/fotos_originales/chinsiya.png')" id="btn-view-full">View</a>
+                    <a class="btn btn-outline-secondary"  onclick="openImg('/img/fotos_originales/chinsiya.png')" id="btn-view-full">View</a>
                     <a href="https://ig.me/m/thousandwools" class="btn btn-outline-primary" target="_blank">Mensaje</a>
                 </div>
             </div>
@@ -214,6 +216,9 @@
             <div><div class="small text-center text-muted">Copyright &copy; 2023 - Thousand Wools</div></div>
             <p class="avisosCopy" ><a href="https://copyrightservice.net/es/copyright_notice" title="Avisos de derechos de autor">Avisos de derechos de autor</a> - Internacional De Derechos De Autor (ICS)</p>
         </footer>
+        <!-- Abrir imagen en grande -->
     <script src="/js/imgFull.js"></script>
+    <!-- Animacion al aparecer -->
+    <script src="/js/animacion_carga.js"></script>
 </body>
 </html>

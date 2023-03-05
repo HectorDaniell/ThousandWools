@@ -7,13 +7,18 @@
     <meta name="keywords" content="lana, crochet, texitl, arte, peru, tejer, mil, thousand, wools">
     
     <title>Thousand Wools</title>
+    <!-- Icono Pestana -->
     <link rel="icon" href="/img/icoTW .png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!-- iconos contacto -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> <!-- IMPORTANT FOR DESIGN BOOTSTRAP CDN -->
+    <!-- iconos contacto -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Libreria Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Custom css -->
     <link rel="stylesheet" href="/css/home_styles.css">
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script><!-- IMPORTANT FOR CAROUSEL -->
+    <!-- Libreria scrollReveal -->
+    <script src="/js/scrollRevealLib.js"></script>
+    <!-- IMPORTANT FOR CAROUSEL -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     
 </head>
 <body>
@@ -26,10 +31,11 @@
           <!-- Elementos de navbar -->
           <a href=""><img class="ico" src="/img/icoTW .png" alt="ico" width="25px" height="25px"></a> 
           <a class="home" href="" style="font-weight: bolder; color: #deb887; text-decoration: none; justify-content: space-between;">Thousand Wools</a>
-          <a class="nav-it" href="gallery.html">Galeria</a>
-          <a class="nav-it" href="#servicios">Servicios</a>
-          <a class="nav-it" href="#contacto">Contacto</a>
-          <a class="nav-it" href="about.html">Nosotros</a>
+          <a class="nav-it opc" href="/index.html">Inicio</a>
+          <a class="nav-it opc" href="gallery.html">Galeria</a>
+          <a class="nav-it opc" href="#servicios">Servicios</a>
+          <a class="nav-it opc" href="#contacto">Contacto</a>
+          <a class="nav-it opc" href="about.html">Nosotros</a>
           <!-- Panel lateral responsivo -->
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width: 250px;" >
             <div class="offcanvas-header">
@@ -61,7 +67,7 @@
       </nav>
       
 <!-- SECCION CARRUSEL -->
-<section id="carrusel">
+<section id="carrusel" class="carusel">
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -116,7 +122,7 @@
 </section>
     
 <!--SECCION SERVICIOS -->
-<section id="servicios">
+<section id="servicios" class="servicios">
         <section class="page-section" id="services">
           <div class="container px-4 px-lg-5">
               <h2 class="text-center mt-0">A tu servicio</h2>
@@ -150,7 +156,7 @@
       
 
 <!-- SECCION PORTAFOLIO -->
-<section id="portafolio">
+<section id="portafolio" class="portafolio">
   <section class="page-section" id="services">
     <div class="container px-4 px-lg-5">
         <h2 class="text-center mt-0">Portafolio</h2>
@@ -198,13 +204,13 @@
 </section>
 <!-- SECCION CONTACTO -->
       <section id="contacto">
-        <section class="page-section" id="services">
+        <section class="page-section" >
           <div class="container px-4 px-lg-5">
-              <h2 class="text-center mt-0"> Contactanos</h2>
+              <h2 class="text-center mt-5"> Contactanos</h2>
               <hr class="divider"/>
           </div>
         </section>
-        <ul>
+        <ul class="icoNet">
           <li style="--i:#56CCF2;--j:#2F80ED;">
             <a class="icon"><i class="fa fa-facebook"></i></a>
             <a class="titulo">facebook</a>
@@ -223,27 +229,13 @@
           </li> -->
           <li style="--i:#FFA9C6;--j:#F434E2;">
             <a class="icon"></a><i class="fa fa-instagram"></i></https:>
-            <a class="titulo"  href="https://www.instagram.com/thousandwools/">instagram </a>
-            <a class="titulo"  href="https://www.instagram.com/thousandwools/">instagram </a>
-            
             <a class="titulo"  href="https://www.instagram.com/thousandwools/">instagram </a>            
             
           </li>
         </ul>
       </section>
       
-      
-      
-      
-      
-      </section>
-      
 
-      
-      
-      
-      </section>
-      
         <!-- FOOTER -->
         <footer class="bg-light py-5">
           <div class="imgFoot">
@@ -253,4 +245,10 @@
           <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2023 - Thousand Wools</div></div>
           <p class="avisosCopy" ><a href="https://copyrightservice.net/es/copyright_notice" title="Avisos de derechos de autor">Avisos de derechos de autor</a> - Internacional De Derechos De Autor (ICS)</p>
         </footer>
+
+
+
+        <script src="/js/animacion_carga.js"></script>
+
+
       </html>

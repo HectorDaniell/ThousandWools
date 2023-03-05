@@ -145,7 +145,7 @@ body {
   justify-self: center;
 }
 
-  /* style */
+  /* style y animacion*/
 
 .nav-it{
   display: inline-block;
@@ -153,10 +153,35 @@ body {
   color: #5a5a5a;
   padding: 10px 30px;
   font-size: 18;
-  border-radius: 46px;
   text-decoration: none;
+  position: relative;
 
 }
+.nav-it:before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: burlywood;
+  transition: all .3s;
+}
+.nav-it:hover::before {
+  width: 100%;
+}
+
+.opc::before {
+  left: 50%;  
+}
+.opc:hover::before {
+  left:0;
+}
+
+
+/*  */
+
+
 .navbar{
   background-color: white;
   display:flex;
@@ -164,14 +189,11 @@ body {
   position: sticky;
   top: 0px;
   z-index: 11;
-  box-shadow:0px 8px 15px rgba(0, 0, 0, 0.7);
+  box-shadow:0px 8px 12px rgba(0, 0, 0, 0.7);
   font-size: 22px;
 }
-.nav-it:hover{
-  background-color: antiquewhite;
-  cursor: pointer;
-  border-radius: 46px;
-}
+
+
 
 .home{
   padding: 10px 15px;
@@ -289,8 +311,6 @@ body{
     position: relative;
     display: flex;
     gap: 25px;
-    
-    
   }
   #contacto ul li{
     position: relative;
@@ -313,7 +333,7 @@ body{
     content: '';
     position: absolute;
     inset: 0;
-    border-radius: 50px;
+    border-radius:  0.5rem;;
     background: linear-gradient(45deg, var(--i), var(--j));
     opacity: 0;
     transition: 0.5s;
