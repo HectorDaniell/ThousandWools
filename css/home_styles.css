@@ -4,9 +4,9 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
-
-
+@font-face {
+font-display: swap;
+}
 body {
     padding-top: 0rem;
     padding-bottom: 3rem;
